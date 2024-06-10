@@ -24,7 +24,6 @@ ORDER BY teachers.name;
 pool
   .query(queryString, values)
   .then((res) => {
-    //console.log(res.rows);
     res.rows.forEach((row) => {
       console.log(
         `${row.cohort}: ${row.teacher}`
